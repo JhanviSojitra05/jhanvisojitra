@@ -87,11 +87,13 @@
     .hero {
       min-height: 100vh;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       align-items: center;
       padding: 8rem 3rem 4rem;
       gap: 4rem;
       position: relative;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .hero::after {
@@ -641,7 +643,7 @@
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
     </div>
-    <div class="hero-right fade-up delay-3">
+    <div class="hero-right fade-up delay-3" style="display:none;">
       <div class="photo-frame">
         <div class="photo-corner tl"></div>
         <div class="photo-corner tr"></div>
@@ -699,20 +701,26 @@
 
   <hr class="divider"/>
 
+  <!-- SOFT SKILLS -->
+  <section>
+    <p class="section-label">Personal strengths</p>
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="soft-skills">
+      <span class="soft-pill">Teamwork</span>
+      <span class="soft-pill">Problem Solving</span>
+      <span class="soft-pill">Communication</span>
+      <span class="soft-pill">Quick Learner</span>
+      <span class="soft-pill">Adaptability</span>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
   <!-- PROJECTS -->
   <section id="projects">
     <p class="section-label">What I've built</p>
     <h2 class="section-title">Projects</h2>
 
-    <!-- Missing info callout -->
-    <div class="missing-callout">
-      <span class="missing-callout-icon">💡</span>
-      <p class="missing-callout-text">
-        <strong>Add more projects here!</strong> Your resume only lists one project. Consider adding
-        college assignments, mini ML experiments, small web apps, or any GitHub repos. Even
-        personal or team projects count — the more the better!
-      </p>
-    </div>
 
     <div class="projects-list">
       <div class="project-item">
@@ -733,18 +741,39 @@
         <span class="project-arrow">↗</span>
       </div>
 
-      <!-- Placeholder project 2 -->
-      <div class="project-item" style="opacity: 0.4;">
+      <div class="project-item">
         <span class="project-num">02</span>
         <div>
-          <h3 class="project-title">Your Next Project</h3>
+          <h3 class="project-title">The Mind's Garden</h3>
           <p class="project-desc">
-            Add a description of another project — an ML model, a web app, a college assignment,
-            or anything you've built. Replace this placeholder with your actual work.
+            A web application focused on natural nootropics for memory, focus, and ADHD management.
+            The platform presents research-backed information on cognitive-enhancing herbs and
+            supplements, helping users explore natural approaches to mental clarity and attention.
           </p>
           <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">ML</span>
+            <span class="project-tag">Web App</span>
+            <span class="project-tag">HTML / CSS</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Health & Wellness</span>
+          </div>
+        </div>
+        <span class="project-arrow">↗</span>
+      </div>
+
+      <div class="project-item">
+        <span class="project-num">03</span>
+        <div>
+          <h3 class="project-title">Smart Dustbin</h3>
+          <p class="project-desc">
+            An IoT-based smart dustbin built with Arduino that automatically opens its lid when
+            a hand is detected nearby using an ultrasonic sensor. The system promotes hygiene
+            and contactless waste disposal through basic electronics and embedded programming.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Arduino</span>
+            <span class="project-tag">IoT</span>
+            <span class="project-tag">Embedded Systems</span>
+            <span class="project-tag">Ultrasonic Sensor</span>
           </div>
         </div>
         <span class="project-arrow">↗</span>
@@ -768,40 +797,26 @@
       <div class="edu-card">
         <p class="edu-year">12TH GRADE</p>
         <h3 class="edu-degree">Higher Secondary Certificate</h3>
-        <p class="edu-school">Gujarat Board</p>
+        <p class="edu-school">V K K M, Gujarat Board</p>
         <div class="edu-grade">60%<span>Percentage</span></div>
       </div>
       <div class="edu-card">
         <p class="edu-year">10TH GRADE</p>
         <h3 class="edu-degree">Secondary School Certificate</h3>
-        <p class="edu-school">Gujarat Board</p>
+        <p class="edu-school">M L Tanna, Gujarat Board</p>
         <div class="edu-grade">88%<span>Percentage</span></div>
       </div>
     </div>
   </section>
 
-  <hr class="divider"/>
-
-  <!-- SOFT SKILLS -->
-  <section>
-    <p class="section-label">Personal strengths</p>
-    <h2 class="section-title">Soft Skills</h2>
-    <div class="soft-skills">
-      <span class="soft-pill">Teamwork</span>
-      <span class="soft-pill">Problem Solving</span>
-      <span class="soft-pill">Communication</span>
-      <span class="soft-pill">Quick Learner</span>
-      <span class="soft-pill">Adaptability</span>
-    </div>
-  </section>
 
   <!-- CONTACT -->
   <div class="contact-section" id="contact">
     <p class="section-label">Let's connect</p>
     <h2 class="contact-title">Get In Touch</h2>
     <div class="contact-links">
-      <a href="mailto:janvisojitra2511@gmail.com" class="contact-link">
-        ✉ janvisojitra2511@gmail.com
+      <a href="/cdn-cgi/l/email-protection#b2d8d3dcc4dbc1ddd8dbc6c0d380878383f2d5dfd3dbde9cd1dddf" class="contact-link">
+        ✉ <span class="__cf_email__" data-cfemail="d8b2b9b6aeb1abb7b2b1acaab9eaede9e998bfb5b9b1b4f6bbb7b5">[email&#160;protected]</span>
       </a>
       <a href="tel:+916353730637" class="contact-link">
         📞 +91 6353730637
@@ -817,10 +832,3 @@
 
   <!-- FOOTER -->
   <footer>
-    <span>© 2026 Jhanvi Sojitra</span>
-    <span>Mehsana, Gujarat, India</span>
-    <span>B.Tech CSE (AI & ML)</span>
-  </footer>
-
-</body>
-</html>
